@@ -2,26 +2,27 @@
 * {
     box-sizing: border-box;
 }
+
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 header {
     background: tomato;
     display: flex;
     justify-content: center;
     padding: 2em;
 }
+
 main {
-    flex:1;
+    flex: 1;
     background: grey;
     color: white;
     padding: 2em;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: grid;
+
 
 }
 
@@ -31,9 +32,15 @@ main {
     background: white;
     color: black;
     max-width: 200px;
+    border-radius: 15px;
+    background-color: aquamarine;
 }
 
 .completed {
-    text-decoration: line-through;
-    opacity: 0.5;
+    /*  text-decoration: line-through;*/
+    opacity: 0.3;
+}
+
+.task .text {
+    font-size: 24px;
 }
