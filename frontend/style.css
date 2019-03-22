@@ -17,12 +17,17 @@ header {
 }
 
 main {
-    flex: 1;
+    display: grid;
+    grid-template-columns: 220px 40vw;
     background: grey;
     color: white;
     padding: 2em;
-    display: grid;
+}
 
+.der {
+    display: flex;
+    align-content: space-between;
+    justify-content: flex-start;
 
 }
 
@@ -39,6 +44,7 @@ main {
 .completed {
     /*  text-decoration: line-through;*/
     opacity: 0.3;
+
 }
 
 .task .text {

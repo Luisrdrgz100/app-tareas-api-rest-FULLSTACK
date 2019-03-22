@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let createNodeFromString = string => {
         let divNode = document.createElement('div');
         divNode.innerHTML = string;
-        return divNode.firstChild;
+        return divNode.lastChild;
     }
     let addRemoveListener = node => {
         node.querySelector('.remove').addEventListener('click', event => {
